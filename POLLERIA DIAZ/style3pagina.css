@@ -1,0 +1,188 @@
+/* fONDO PRINCIPAL */
+*{
+    background-color: #ffdea100;
+    }
+    
+    /* centrar href y breve texto (misma altura que logo) */
+    
+    
+    
+    .frase {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #ff0000;
+        font-size: 1.5em; 
+        margin-bottom: 10px; 
+        position: relative; 
+        left: -120px;
+        top: 40px; /* Ajusta este valor para bajar el texto */
+        margin: 0 10px; /* Espacio entre los divs y la imagen */
+    
+    }
+    .frased {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #00910c;
+        font-size: 1em; 
+        margin-bottom: 20px; 
+        position: relative; 
+        left: -120px;
+        top: 40px; /* Ajusta este valor para bajar el texto */
+        margin: 0 10px; /* Espacio entre los divs y la imagen */ 
+    }
+    .menuenlace {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start; /* Espacia los elementos horizontalmente */
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        right: -160px;
+        top: 90px; /* Ajusta este valor para bajar el texto */
+       
+    }
+    
+    .menuenlace li {
+        margin-right: 50px;  
+    }
+    
+    .menuenlace li:nth-child(-n+3) + li::before {
+        content: "|";
+        margin-right: 60px; /* Ajusta el espacio a la derecha del separador */
+        color: black; /* Ajusta el color del separador */
+        font-size: 2em; /* Tamaño del separador */
+    }
+    .menuenlace img {
+        height: 200px; /* Ajusta la altura de la imagen según tus necesidades */
+        position: relative; 
+        right: -70px;
+        top: -160px; /* Ajusta este valor para bajar el texto */
+    }
+    
+    /*----------------------------------------------*/
+   /* GENERAL */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto de los elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdea1; /* Color de fondo general */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura completa de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MENU */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1; /* Permite que el contenido principal ocupe todo el espacio disponible, empujando el pie de página hacia abajo */
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 40px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f1c27d; /* Color de fondo del pie de página */
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    color: #f1c27d;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    background-color: #e74c3c;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer-section p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.footer-section img {
+    max-width: 50px;
+    margin: 5px;
+}
+
+.footer-section strong {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.footer-section:last-child {
+    text-align: right;
+}
+
+.footer-section:last-child img {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.libro {
+    max-width: 100%; /* Asegura que la imagen no superará el ancho del contenedor */
+    height: auto;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    background-color: #222; /* Color de fondo para la parte inferior del pie de página */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    margin-top: 10px; /* Espaciado superior para separar del contenido del pie de página */
+}
+
+.derechos {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
